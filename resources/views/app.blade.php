@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/apple-icon.png') }}">
-    <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="icon" href="https://i0.wp.com/smkbagimunegeriku.sch.id/wp-content/uploads/2021/12/cropped-Logo-BN-512x512-1.png?fit=32%2C32&amp;ssl=1" sizes="32x32">
     <title>
-        Soft UI Dashboard by Creative Tim
+        EduKarya Koperasi Guru SMK BN
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -28,7 +28,9 @@
     @include('partials.sidebar')
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         @include('partials.navbar')
-        @include('pages.home')
+        <div class="container-fluid py-4">
+            @yield('content')
+        </div>
     </main>
     @include('partials.plugin')
     <!--   Core JS Files   -->
